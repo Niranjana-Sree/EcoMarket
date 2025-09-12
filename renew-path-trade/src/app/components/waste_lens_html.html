@@ -1,0 +1,20 @@
+<div class="lens-container">
+  <h1>Waste Classification Lens</h1>
+  <p>Point your camera at an item to classify it.</p>
+  
+  <video #videoElement autoplay playsinline></video>
+  
+  <canvas #canvasElement style="display: none;"></canvas>
+  
+  <button (click)="captureAndClassify()" [disabled]="isLoading">
+    {{ isLoading ? 'Classifying...' : 'Classify Waste' }}
+  </button>
+  
+  <div #resultsElement class="results">
+    <p *ngIf="!classificationResult">Results will appear here.</p>
+    <div *ngIf="classificationResult">
+        <h3>Classification: {{ classificationResult.label }}</h3>
+        <p>Confidence: {{ (classificationResult.score * 100).toFixed(2) }}%</p>
+    </div>
+  </div>
+</div>

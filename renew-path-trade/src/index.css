@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* EcoMarket Design System - Sustainability & Circular Economy Theme */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 20%;
+
+    /* Green primary for sustainability theme */
+    --primary: 142 71% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 142 71% 40%;
+
+    /* Subtle green secondary */
+    --secondary: 142 20% 96%;
+    --secondary-foreground: 142 71% 25%;
+
+    /* Muted tones */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    /* Accent for highlights */
+    --accent: 142 30% 94%;
+    --accent-foreground: 142 71% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 142 71% 45%;
+
+    --radius: 0.75rem;
+
+    /* Custom EcoMarket colors */
+    --eco-green: 142 71% 45%;
+    --eco-green-light: 142 50% 85%;
+    --eco-green-dark: 142 71% 35%;
+    --eco-blue: 210 100% 50%;
+    --eco-gray: 210 10% 50%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(142 71% 45%), hsl(142 71% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(142 71% 45% / 0.9), hsl(142 71% 35% / 0.9));
+
+    /* Shadows */
+    --shadow-card: 0 4px 12px hsl(142 71% 45% / 0.1);
+    --shadow-button: 0 4px 12px hsl(142 71% 45% / 0.25);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 20% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 210 20% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 210 20% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 142 71% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 142 71% 45%;
+
+    --secondary: 210 20% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 20% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 210 20% 18%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 18%;
+    --input: 210 20% 18%;
+    --ring: 142 71% 50%;
+
+    /* Dark mode EcoMarket colors */
+    --eco-green: 142 71% 50%;
+    --eco-green-light: 142 50% 25%;
+    --eco-green-dark: 142 71% 40%;
+
+    /* Dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(142 71% 50%), hsl(142 71% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(142 71% 50% / 0.9), hsl(142 71% 40% / 0.9));
+
+    /* Dark shadows */
+    --shadow-card: 0 4px 12px hsl(0 0% 0% / 0.25);
+    --shadow-button: 0 4px 12px hsl(142 71% 50% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
