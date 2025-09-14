@@ -1,11 +1,8 @@
-flask
-numpy
-pandas
-scikit-learn
-jolib
-matplotlib
-requests
-tqdm
-uvicorn
-fastapi
-torch
+--extra-index-url https://download.pytorch.org/whl/cpu
+fastapi==0.112.2
+uvicorn[standard]==0.30.6
+pillow==10.4.0
+python-multipart>=0.0.9
+transformers==4.44.2
+safetensors>=0.4.3
+torch==2.5.1
